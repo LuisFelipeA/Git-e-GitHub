@@ -1,0 +1,76 @@
+____Comandos git________________
+
+git config - configura identidade
+
+	$ git config –global user.name “Seu nome”
+
+	$ git config –global user.email “Seu email”
+
+
+git init - criar novo projeto
+
+	$ git init <O nome do seu repositório>
+
+
+git add - adciona arquivos
+
+	$ git add seu_arquivo (adiciona arquivo especifico)
+	
+	$ git add . (adciona todos)
+	
+	
+git status - mostra o status dos arquivos
+	
+	$ git status
+
+
+git commit - salva as alterações realizadas
+
+	$ git commit -a -m "mensagem"
+		-a = all(todos arquivos)
+		-m = mensagem
+		
+		
+git push - envia os arquivos para o GitHub
+	
+	$ git push
+	
+git pull - sincroniza os arquivos locais com os do GitHub
+
+	$ git pull 
+	
+
+git clone - clona o repositório
+
+	$ git clone <link do repositório>
+	
+
+git rm - remove o arquivo
+
+	$ git rm <nome do arquivo>
+	
+	
+git log - mostra informações dos commits realizados no projeto
+
+	$ git log
+	
+	
+git mv - move o arquivo de lugar ou altera o nome
+
+	$ git mv <nome do arquivo> <local que ira mover + nome do arquivo>
+	
+	
+git checkout - retorna o arquivo ao estado original (igual do repositório)
+
+	$ git checkout <local e nome do arquivo>
+	
+	
+.gitignore - ignorar arquivos do projeto
+
+	cria um arquivo na pasta com nome de .gitignore	e 
+	dentro dele coloca os arquivos que serão ignorados
+	
+	
+git reset - retorna as mudanças feitas para versão selecionada
+
+	$ git reset --hard origin/master
