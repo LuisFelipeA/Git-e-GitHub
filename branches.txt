@@ -1,1 +1,51 @@
+----Branch---------------------------------------------------------------------------------------------------
+
 Branches são ramificações do projeto
+O projeto é criado na branch master, quando estamos editando o projeto ele fica em um branch separado
+Após finalizar as alterações, os branchs são unidos
+
+comandos:
+
+git branch - mostra os branchs disponiveis
+
+git branch <nome> - cria um branch novo
+
+git branch -d - deleta o branch
+
+git checkout <nome do branch> - troca de branch
+
+git checkout -b <nome do branch> - cria uma copia do branch
+	geralmente usado para copiar a master (branch principal)
+	
+git merge <nome> - usado para unir os codigos dos branches
+
+
+----stash---------------------------------------------------------------------------------------------------
+
+stash - salva as modificações em uma pilha que pode voltar a qualquer momento
+
+git stash - cria uma stash
+
+git stash list - mostra as stashs criadas
+
+git stash apply <id stash> - recupera a stash
+
+git stash clear - apaga todas as stash
+
+git stash drop <id stash> - apaga uma stash especifica
+
+
+----tags----------------------------------------------------------------------------------------------------
+
+serve como checkpoint de um branch
+
+git tag -a <nome tag> -m "<mensagem>" - cria uma tag
+
+git show <nome tag> - verifica a tag
+
+git checkout <nome tag> - troca de tag
+
+git push origin <nome tag> - envia a tag para o repositorio
+
+git push origin --tags - envia varias tags
+

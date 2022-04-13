@@ -42,8 +42,8 @@ git pull - sincroniza os arquivos locais com os do GitHub
 
 git clone - clona o repositório
 
-	$ git clone <link do repositório>
-	
+	$ git clone <link do repositório>.git .
+		git clone https://github.com/LuisFelipeA/Git-e-GitHub.git .
 
 git rm - remove o arquivo
 
@@ -74,3 +74,19 @@ git checkout - retorna o arquivo ao estado original (igual do repositório)
 git reset - retorna as mudanças feitas para versão selecionada
 
 	$ git reset --hard origin/master
+
+	
+git remote - usado para gerenciar conjunto de repositórios rastreados
+
+	$ git remote add <nome> <URL>
+	
+
+git submodule - maneira de ter dois ou mais projetos em um repositório
+
+	$ git submodule add <repositório>
+	
+	$git submodule (mostra os submodulos)
+	
+	$git push --recurse-submodule=on-demand (envia para o repositório do submodulo)
+	
+	
